@@ -4,7 +4,7 @@ import sys
 import fuzz_helpers
 
 
-with atheris.instrument_imports():
+with atheris.instrument_imports(include=['markdown2']):
     from markdown2 import Markdown
     import markdown2
 
