@@ -1,0 +1,8 @@
+project: python-markdown2
+target: fuzz-md
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_md.py
+    libfuzzer: true
